@@ -36,6 +36,6 @@ foreach my $track (@arr) {
   $tag->{ARTIST} = $array[0];
   $tag->{TITLE}  = $array[1];
   move ($track, $new_music.".aac");
-  set_mp3tag($new_music.".aac", $tag);
+  set_mp3tag($new_music, $tag);
 }
 exit;
