@@ -1,10 +1,14 @@
+# tag music from yt
+# use yt-dl -f 140 to get .m4a extension with .aac encoding
+# downloaded format is artist-track-1234abcd.m4a
+# output format is artist track.aac
+
 #!/usr/bin/perl
 use strict;
 use warnings;
 use MP3::Info;
 use File::Copy;
 use feature 'say';
-
 
 # directory is working directory
 
@@ -16,9 +20,6 @@ while (my $music = readdir $dh) {
   if ($music eq '.' or $music eq '..' or $music !~ /\.m4a$/) {
   next;
 }
-# my @arr = split (/\s?-\s?/,$music);
-# $new_music = "$arr[0] $arr[1].aac";
-
 copy ($music, "$new_dir/$music");
 }
 closedir $dh;
