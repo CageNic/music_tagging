@@ -1,0 +1,36 @@
+ The programs follow the usual GNU command line syntax, with long options starting with two
+       dashes (`-').  A complete list of options are included below.  For a complete description,
+       use the help option.
+
+       -t, --set-title=WORD
+              Sets the title to WORD
+
+       -a, --set-album=WORD
+              Sets the album to WORD
+
+       -r, --set-artist=WORD
+              Sets the artist to WORD
+
+       -y, --set-year=YEAR
+              Sets the year to YEAR [4 digits]
+
+       -n, --set-note=WORD
+              Sets the note to WORD
+
+       -g, --set-genre=INT
+              Sets the genre code to INT (the codes can be acquired from the genre list.)
+
+       -G, --set-genre-word=WORD
+              Sets the genre to WORD (given that WORD is from the genre list.)
+
+       -c, --set-track=INT
+              Sets the track to INT
+
+       -h, --help
+              Show summary of options.
+
+       -v, --version
+              Show version of program.
+
+       -l, --genre-list
+              Shows the genre list.
